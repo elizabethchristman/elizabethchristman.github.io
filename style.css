@@ -1,7 +1,15 @@
 .publications{
-    font-size:8pt;
+    font-size:10pt;
 }
 
-.bg-body-tertiary{
-    color:green;
+.navbar{
+    background-color: #05b37c;
+}
+.nav-link{
+    color:white
+    
+}
+
+.nav-link:active{
+    color:white;
 }

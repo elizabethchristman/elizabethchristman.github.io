@@ -24,10 +24,11 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid justify-content-end">
         <div class="navbar-nav">
           <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="about.html">About Me</a>
           <a class="nav-link active" aria-current="page" href="projects.html"
             >Projects</a
           >
@@ -37,79 +38,174 @@
       </div>
     </nav>
     <main>
-      <div class="container-md">
+      <div class="container-sm">
         <div
           class="row text-center"
           style="margin-top: 25px; margin-bottom: 25px"
         >
           <h3>Featured Project</h3>
         </div>
-        <div class="row justify-content-center" style="margin-bottom: 100px">
+        <div class="row justify-content-center" style="margin-bottom: 25px">
           <div class="col-4">
             <h4>2D Jupyter</h4>
             <p>
               A Jupyter Notebook extension that enables multi-column layouts and
-              freeform cell placement.
+              freeform cell placement. Completed
             </p>
-            <p>
-              <a
-                href="https://github.com/elizabethc99/2D-Jupyter"
-                class="btn btn btn-outline-dark mt-auto align-self-start"
-                >Link</a
-              >
-            </p>
-            <p>Related Publications: <br>
-              <div class="publications">
-                J. Harden, E. Christman, N. Kirshenbaum, J. Wenskovitch, J. Leigh and C. North, "Exploring Organization of Computational Notebook Cells in 2D Space," 2022 IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC), Roma, Italy, 2022, pp. 1-6, doi:10.1109/VL/HCC53370.2022.9833128.
-              </div>
-
-            </p>
+            <p></p>
+            Related Publications: <br />
+            <div class="publications">
+              <ul>
+                <li>
+                  "Exploring Organization of Computational Notebook Cells in 2D
+                  Space," 2022 IEEE Symposium on Visual Languages and
+                  Human-Centric Computing (VL/HCC), Roma, Italy, 2022, pp. 1-6,
+                  doi:
+                  <a href="https://doi.org/10.1109/VL/HCC53370.2022.9833128"
+                    >10.1109/VL/HCC53370.2022.9833128</a
+                  >.
+                </li>
+                <li>
+                  "'There is no reason anybody should be using 1D anymore':
+                  Design and Evaluation of 2D Jupyter Notebooks" Graphics
+                  Interface 2023. (in press)
+                </li>
+              </ul>
+            </div>
+            <a
+              href="https://github.com/elizabethc99/2D-Jupyter"
+              class="btn btn btn-outline-dark mt-auto align-self-start"
+              >Link</a
+            >
           </div>
           <div class="col-5">
             <img src="images/p8-notebook.png" class="img-fluid" alt="..." />
           </div>
         </div>
         <div>
-          <h3>Other Projects</h3>
           <div class="container">
-            <div class="row">
-              <div class="col-lg-4 mb-3 d-flex align-items-stretch">
-                <div class="card" style="width: 24rem">
-                  <div class="card-body d-flex flex-column">
+            <div class="row text-center" style="margin-bottom: 2%">
+              <h3>Other Projects</h3>
+            </div>
+
+            <div class="row justify-content-center">
+              <div class="col-lg-4 mb-3">
+                <div class="card text-center" style="width: 24rem">
+                  <div class="card-body">
                     <h5 class="card-title">
                       A Comparative Overview of Dimension Reduction Methods
                     </h5>
-                    <p class="card-text mb-4">
-                      An interactive Observable Notebook explaining dimension
-                      reduction and providing a comparison of PCA, MDS, and
-                      t-SNE methods.
-                    </p>
-                    <a
-                      href="https://observablehq.com/@3e787c1af6c5a437/a-comparative-overview-of-dimension-reduction-methods"
-                      class="btn btn btn-outline-dark mt-auto align-self-start"
-                      >Link</a
+                    <!-- Button trigger modal -->
+                    <button
+                      type="button"
+                      class="btn btn-outline-dark"
+                      data-bs-toggle="modal"
+                      data-bs-target="#dimension-reduction"
                     >
+                      Read more
+                    </button>
+
+                    <!-- Modal -->
+                    <div
+                      class="modal fade"
+                      id="dimension-reduction"
+                      tabindex="-1"
+                      aria-labelledby="exampleModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                            An interactive Observable Notebook explaining
+                            dimension reduction and providing a comparison of
+                            PCA, MDS, and t-SNE methods.
+                            <img
+                              src="images/observable2.png"
+                              style="height: 100%; width: 100%"
+                            />
+                          </div>
+                          <div class="modal-footer">
+                            <button
+                              onclick="window.location.href='https://observablehq.com/@3e787c1af6c5a437/a-comparative-overview-of-dimension-reduction-methods'"
+                              type="button"
+                              class="btn btn-outline-dark"
+                            >
+                              Link
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="col-lg-4 mb-3 d-flex align-items-stretch">
-                <div class="card" style="width: 24rem">
-                  <div class="card-body d-flex flex-column">
+                <div class="card text-center" style="width: 24rem">
+                  <div class="card-body flex-column">
                     <h5 class="card-title">Music Through the Decades</h5>
-                    <p class="card-text mb-4">
-                      Interactive webpage exploring statistics about music from
-                      the 1960s - 2010s.
-                    </p>
-                    <a
-                      href="https://elizabethc99.github.io/cs5764-final-project/"
-                      class="btn btn btn-outline-dark mt-auto align-self-start"
-                      >Link</a
+                    <br />
+                    <!-- Button trigger modal -->
+                    <button
+                      type="button"
+                      class="btn btn-outline-dark"
+                      data-bs-toggle="modal"
+                      data-bs-target="#music-decades"
                     >
+                      Read more
+                    </button>
+
+                    <!-- Modal -->
+                    <div
+                      class="modal fade"
+                      id="music-decades"
+                      tabindex="-1"
+                      aria-labelledby="exampleModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1
+                              class="modal-title fs-5"
+                              id="exampleModalLabel"
+                            ></h1>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                            An interactive webpage exploring statistics about
+                            music from the 1960s - 2010s.
+                            <img
+                              src="images/music-decades.png"
+                              style="height: 100%; width: 100%"
+                            />
+                          </div>
+                          <div class="modal-footer">
+                            <button
+                              onclick="window.location.href='https://elizabethc99.github.io/cs5764-final-project/'"
+                              type="button"
+                              class="btn btn-outline-dark"
+                            >
+                              Link
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-lg-4 d-flex align-items-stretch">
-                <!--CARD HERE-->
               </div>
             </div>
           </div>
